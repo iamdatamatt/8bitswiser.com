@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import companyLogo from '/8bitswiser.svg'
 import './App.css'
 
