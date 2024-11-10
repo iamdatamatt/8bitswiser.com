@@ -27,6 +27,11 @@ export default defineConfig({
             type: 'image/png'
           }
         ]
+      },
+      workbox: {
+        navigateFallback: null,
+        navigateFallbackAllowlist: [/^\/$/],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       }
     })
   ],
