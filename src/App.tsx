@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import companyLogo from '/8bitswiser.svg'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +11,7 @@ function App() {
     <div className={`max-w-6xl mx-auto p-8 text-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
       <div className="flex justify-center items-center mb-8">
         <img 
-          src={companyLogo} 
+          src="/8bitswiser.svg"
           className="logo hover:scale-110 transition-transform" 
           alt="8 Bits Wiser logo" 
         />
