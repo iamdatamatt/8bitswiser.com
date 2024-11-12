@@ -8,7 +8,7 @@ import {
   useNavigate,
 } from "@remix-run/react";
 import { useEffect } from "react";
-import { SchemaMarkup } from "./components/SchemaMarkup";
+import { Organization, Person, WebSite, WithContext } from "schema-dts";
 import "./tailwind.css";
 
 export const links: LinksFunction = () => [
@@ -74,7 +74,50 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export function Layout({ children }: { children: React.ReactNode }) {
+const personSchema: WithContext<Person> = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Matt Trombley",
+  url: "https://datamatt.io/",
+  image: "https://datamatt.io/img/trombley_matthew_profile_picture.webp",
+  sameAs: [
+    "https://www.linkedin.com/in/iamdatamatt/",
+    "https://github.com/iamdatamatt",
+  ],
+  jobTitle: "Technology Consultant",
+  worksFor: {
+    "@type": "Organization",
+    name: "8 Bits Wiser",
+  },
+  description:
+    "Technology consultant specializing in AI/ML and web development",
+};
+
+const websiteSchema: WithContext<WebSite> = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "8 Bits Wiser",
+  url: "https://8bitswiser.com/",
+};
+
+const organizationSchema: WithContext<Organization> = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "8 Bits Wiser",
+  url: "https://8bitswiser.com",
+  logo: "https://8bitswiser.com/8-bits-wiser.svg",
+  sameAs: [
+    "https://www.linkedin.com/in/iamdatamatt/",
+    "https://github.com/iamdatamatt",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    email: "contact@8bitswiser.com",
+  },
+};
+
+export default function App() {
   return (
     <html lang="en">
       <head>
@@ -82,22 +125,42 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <SchemaMarkup />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-V2SF6WVWKH`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-V2SF6WVWKH');
+            `,
+          }}
+        />
+      </head>
+      <body>
+        <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <noscript>
-          <div className="text-center p-5">
-            Please enable JavaScript to view this website.
-          </div>
-        </noscript>
-      </head>
-      <body>{children}</body>
+      </body>
     </html>
   );
-}
-
-export default function App() {
-  return <Outlet />;
 }
 
 export function ErrorBoundary() {
