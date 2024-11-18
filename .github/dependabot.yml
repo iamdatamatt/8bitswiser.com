@@ -4,6 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
     open-pull-requests-limit: 10
     assignees:
       - "iamdatamatt"
