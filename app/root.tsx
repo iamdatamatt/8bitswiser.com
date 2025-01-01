@@ -49,7 +49,7 @@ export const meta: MetaFunction = () => {
     },
     { property: "og:url", content: "https://8bitswiser.com/" },
     { property: "og:locale", content: "en_US" },
-    { property: "og:image", content: "/social-card.png" },
+    { property: "og:image", content: "https://8bitswiser.com/social-card.png" },
     { property: "og:type", content: "website" },
     { property: "og:site_name", content: "8 Bits Wiser" },
     { property: "og:image:type", content: "image/png" },
@@ -65,7 +65,7 @@ export const meta: MetaFunction = () => {
       content:
         "Expert technology consulting services specializing in AI/ML, data analytics, website development, and SEO optimization.",
     },
-    { name: "twitter:image", content: "/social-card.png" },
+    { name: "twitter:image", content: "https://8bitswiser.com/social-card.png" },
     { name: "twitter:card", content: "summary_large_image" },
     {
       name: "twitter:image:alt",
