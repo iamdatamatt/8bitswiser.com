@@ -75,11 +75,11 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=258/beacon.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=86/beacon.png 86w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=129/beacon.png 129w"
-                  sizes="(max-width: 768px) 86px,
-                         129px"
+                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/beacon.png"
+                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=172/beacon.png 172w,
+                          /cdn-cgi/image/fit=scale-down,format=avif,width=258/beacon.png 258w"
+                  sizes="(max-width: 768px) 172px,
+                         258px"
                   alt="Beacon Mobility"
                   className="h-8 md:h-12 w-auto brightness-0 invert"
                   width={129}
@@ -93,11 +93,11 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=354/ncgc.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=118/ncgc.png 118w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=177/ncgc.png 177w"
-                  sizes="(max-width: 768px) 118px,
-                         177px"
+                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/ncgc.png"
+                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=236/ncgc.png 236w,
+                          /cdn-cgi/image/fit=scale-down,format=avif,width=354/ncgc.png 354w"
+                  sizes="(max-width: 768px) 236px,
+                         354px"
                   alt="The NeuroPsych Center of Greater Cincinnati"
                   className="h-8 md:h-12 w-auto brightness-0 invert"
                   width={177}
@@ -111,11 +111,11 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=252/sideline-sprint.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=91/sideline-sprint.png 91w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=136/sideline-sprint.png 136w"
-                  sizes="(max-width: 768px) 91px,
-                         136px"
+                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/sideline-sprint.png"
+                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=182/sideline-sprint.png 182w,
+                          /cdn-cgi/image/fit=scale-down,format=avif,width=272/sideline-sprint.png 272w"
+                  sizes="(max-width: 768px) 182px,
+                         272px"
                   alt="Sideline Sprint"
                   className="h-8 md:h-12 w-auto brightness-0 invert"
                   width={136}
@@ -129,11 +129,11 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=144/data-matt.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=48/data-matt.png 48w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=72/data-matt.png 72w"
-                  sizes="(max-width: 768px) 48px,
-                         72px"
+                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/data-matt.png"
+                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=96/data-matt.png 96w,
+                          /cdn-cgi/image/fit=scale-down,format=avif,width=144/data-matt.png 144w"
+                  sizes="(max-width: 768px) 96px,
+                         144px"
                   alt="Data Matt"
                   className="h-8 md:h-12 w-auto"
                   width={72}
