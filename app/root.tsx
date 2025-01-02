@@ -27,6 +27,11 @@ export const links: LinksFunction = () => [
   },
   { rel: "manifest", href: "/site.webmanifest" },
   { rel: "canonical", href: "https://8bitswiser.com" },
+  {
+    rel: "preload",
+    href: "/8-bits-wiser.svg",
+    as: "image",
+  },
 ];
 
 export const meta: MetaFunction = () => {
