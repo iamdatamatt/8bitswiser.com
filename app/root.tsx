@@ -139,7 +139,6 @@ export default function App() {
             __html: JSON.stringify(organizationSchema),
           }}
         />
-        {/*
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-V2SF6WVWKH`}
@@ -154,7 +153,6 @@ export default function App() {
             `,
           }}
         />
-        */}
       </head>
       <body>
         <Outlet />
