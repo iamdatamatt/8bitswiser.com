@@ -75,10 +75,10 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/beacon.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=172/beacon.png 172w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=258/beacon.png 258w"
-                  sizes="(max-width: 768px) 86px,
+                  src="/beacon-500.webp"
+                  srcSet="/beacon-200.webp 200w,
+                          /beacon-350.webp 350w"
+                  sizes="(max-width: 767px) 86px,
                          129px"
                   alt="Beacon Mobility"
                   className="h-8 md:h-12 w-auto brightness-0 invert"
@@ -93,9 +93,9 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/ncgc.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=236/ncgc.png 236w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=354/ncgc.png 354w"
+                  src="/ncgc-500.webp"
+                  srcSet="/ncgc-250.webp 250w,
+                          /ncgc-375.webp 375w"
                   sizes="(max-width: 768px) 118px,
                          177px"
                   alt="The NeuroPsych Center of Greater Cincinnati"
@@ -111,9 +111,9 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/sideline-sprint.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=182/sideline-sprint.png 182w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=272/sideline-sprint.png 272w"
+                  src="/sideline-sprint-500.webp"
+                  srcSet="/sideline-sprint-250.webp 250w,
+                          /sideline-sprint-375.webp 375w"
                   sizes="(max-width: 768px) 91px,
                          136px"
                   alt="Sideline Sprint"
@@ -129,9 +129,9 @@ export default function Index() {
                 className="transition-transform hover:-translate-y-1 duration-300 shrink-0"
               >
                 <img
-                  src="/cdn-cgi/image/fit=scale-down,format=avif,width=500/data-matt.png"
-                  srcSet="/cdn-cgi/image/fit=scale-down,format=avif,width=96/data-matt.png 96w,
-                          /cdn-cgi/image/fit=scale-down,format=avif,width=144/data-matt.png 144w"
+                  src="/data-matt-500.webp"
+                  srcSet="/data-matt-100.webp 100w,
+                          /data-matt-200.webp 200w"
                   sizes="(max-width: 768px) 48px,
                          72px"
                   alt="Data Matt"
