@@ -112,8 +112,8 @@ export default function Index() {
               >
                 <img
                   src="/sideline-sprint-500.webp"
-                  srcSet="/sideline-sprint-250.webp 250w,
-                          /sideline-sprint-375.webp 375w"
+                  srcSet="/sideline-sprint-200.webp 200w,
+                          /sideline-sprint-350.webp 350w"
                   sizes="(max-width: 768px) 91px,
                          136px"
                   alt="Sideline Sprint"
