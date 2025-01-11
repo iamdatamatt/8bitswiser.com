@@ -40,7 +40,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "Expert technology consulting services specializing in AI/ML, data analytics, website development, and SEO optimization. Transform your business with custom solutions.",
+        "Expert tech consulting firm specializing in AI/ML, data analytics, web development, and SEO optimization. Transform your business with custom solutions.",
     },
     { name: "apple-mobile-web-app-title", content: "8 Bits Wiser" },
     {
@@ -50,7 +50,7 @@ export const meta: MetaFunction = () => {
     {
       property: "og:description",
       content:
-        "Expert technology consulting services specializing in AI/ML, data analytics, website development, and SEO optimization.",
+        "Expert tech consulting firm specializing in AI/ML, data analytics, web development, and SEO optimization. Transform your business with custom solutions.",
     },
     { property: "og:url", content: "https://8bitswiser.com/" },
     { property: "og:locale", content: "en_US" },
@@ -68,7 +68,7 @@ export const meta: MetaFunction = () => {
     {
       name: "twitter:description",
       content:
-        "Expert technology consulting services specializing in AI/ML, data analytics, website development, and SEO optimization.",
+        "Expert tech consulting firm specializing in AI/ML, data analytics, web development, and SEO optimization. Transform your business with custom solutions.",
     },
     { name: "twitter:image", content: "https://8bitswiser.com/social-card.png" },
     { name: "twitter:card", content: "summary_large_image" },
